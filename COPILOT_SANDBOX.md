@@ -14,3 +14,8 @@
 - [ ] `git commit` — Records the staged changes with a commit message.
 - [ ] `git push` — Uploads committed branch changes to the remote repository.
 - [ ] `git checkout -b` — Creates a new branch and switches to it.
+
+## Common Pitfalls & Quick Fixes
+
+- If `git push` is rejected because the remote has newer commits, run `git pull --rebase` and then retry `git push`.
+- If you commit to the wrong branch, create or switch to the intended branch, then move the commit with `git cherry-pick <commit>` before pushing it.
