@@ -20,7 +20,6 @@ def main() -> None:
     entries = sorted(repository_root.iterdir(), key=lambda path: path.name)
     for entry in entries:
         # Distinguish directories from files while keeping the output concise.
-        entry_type = "directory" if entry.is_dir() else "file"
         print(f"- {entry.name}/" if entry.is_dir() else f"- {entry.name}")
 
 
